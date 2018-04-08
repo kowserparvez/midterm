@@ -12,7 +12,6 @@ public class Sort {
     public int[] selectionSort(int [] array){
         final long startTime = System.currentTimeMillis();
         int [] list = array;
-
         for(int i=0; i<array.length; i++){
             for(int j=i+1; j<array.length; j++){
                 if(array[j]<array[i]){
@@ -23,7 +22,6 @@ public class Sort {
             }
 
         }
-
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
         this.executionTime = executionTime;
@@ -34,15 +32,14 @@ public class Sort {
         final long startTime = System.currentTimeMillis();
         int [] list = array;
         //implement here
-        for (int i = 0; i<array.length-1;i++){
-            for (int j =i;j>0;j++){
-                if(array[i]<array[j-1]){
-                    int temp = array[j];
-                    array[j]=array[j-1];
-                    array[j-1]=temp;
-
-                }
+        for (int i = 1; i<list.length;i++){
+            int key = list[i];
+            int j = i-1;
+            while(j>=0 && list[j]>key ){
+                list[j+1]=list[j];
+                j--;
             }
+            list[j+1] = key;
         }
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
@@ -78,6 +75,7 @@ public class Sort {
 
 
 
+
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
         this.executionTime = executionTime;
@@ -85,11 +83,10 @@ public class Sort {
     }
     
 
-    public int [] quickSort(int [] array){
+    public int [] quickSort(int [] array, int low, int high){
         final long startTime = System.currentTimeMillis();
         int [] list = array;
         //implement here
-
 
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
@@ -101,7 +98,6 @@ public class Sort {
         final long startTime = System.currentTimeMillis();
         int [] list = array;
         //implement here
-
 
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
