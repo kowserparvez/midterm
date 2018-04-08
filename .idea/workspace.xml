@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9771989b-51b3-4e7c-b47c-ddb973a42c7b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/mongoSettings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingExamMarch2018/algorithm/Numbers.class" afterPath="$PROJECT_DIR$/out/production/CodingExamMarch2018/algorithm/Numbers.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingExamMarch2018/algorithm/Sort.class" afterPath="$PROJECT_DIR$/out/production/CodingExamMarch2018/algorithm/Sort.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingExamMarch2018/databases/ConnectDB.class" afterPath="$PROJECT_DIR$/out/production/CodingExamMarch2018/databases/ConnectDB.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingExamMarch2018/definition/core-java-conceptual-questions" afterPath="$PROJECT_DIR$/out/production/CodingExamMarch2018/definition/core-java-conceptual-questions" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingExamMarch2018/parser/ProcessStudentInfo.class" afterPath="$PROJECT_DIR$/out/production/CodingExamMarch2018/parser/ProcessStudentInfo.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingExamMarch2018/parser/Student.class" afterPath="$PROJECT_DIR$/out/production/CodingExamMarch2018/parser/Student.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingExamMarch2018/secret.properties" afterPath="$PROJECT_DIR$/out/production/CodingExamMarch2018/secret.properties" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/Numbers.java" afterPath="$PROJECT_DIR$/src/algorithm/Numbers.java" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/Sort.java" afterPath="$PROJECT_DIR$/src/algorithm/Sort.java" />
-      <change beforePath="$PROJECT_DIR$/src/problems/Anagram.java" afterPath="$PROJECT_DIR$/src/problems/Anagram.java" />
-      <change beforePath="$PROJECT_DIR$/src/problems/DuplicateWord.java" afterPath="$PROJECT_DIR$/src/problems/DuplicateWord.java" />
-      <change beforePath="$PROJECT_DIR$/src/secret.properties" afterPath="$PROJECT_DIR$/src/secret.properties" />
+      <change beforePath="$PROJECT_DIR$/src/math/Fibonacci.java" afterPath="$PROJECT_DIR$/src/math/Fibonacci.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,15 +54,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DuplicateWord.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DuplicateWord.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/problems/DuplicateWord.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
+            <state relative-caret-position="594">
               <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#635#652#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fibonacci.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/math/Fibonacci.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,16 +95,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="core-java-conceptual-questions" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/definition/core-java-conceptual-questions">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -178,6 +165,7 @@
         <option value="$PROJECT_DIR$/src/algorithm/Numbers.java" />
         <option value="$PROJECT_DIR$/src/problems/Anagram.java" />
         <option value="$PROJECT_DIR$/src/problems/DuplicateWord.java" />
+        <option value="$PROJECT_DIR$/src/math/Fibonacci.java" />
       </list>
     </option>
   </component>
@@ -243,7 +231,13 @@
               <item name="MidtemMarch2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="MidtemMarch2018" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="problems" type="462c0819:PsiDirectoryNode" />
+              <item name="design" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MidtemMarch2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MidtemMarch2018" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -279,7 +273,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DuplicateWord">
+  <component name="RunManager" selected="Application.Fibonacci">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="WIDTH" value="0" />
@@ -324,6 +318,25 @@
       <module name="CodingExamMarch2018" />
       <envs />
     </configuration>
+    <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="math.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="math.Fibonacci" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CodingExamMarch2018" />
+      <envs />
+    </configuration>
     <configuration name="Numbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" runner="idea">
         <pattern>
@@ -351,25 +364,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="parser.ProcessStudentInfo" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="CodingExamMarch2018" />
-      <envs />
-    </configuration>
-    <configuration name="UnitTestSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="algorithm.UnitTestSorting" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -456,19 +450,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.UnitTestSorting" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ProcessStudentInfo" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Numbers" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Anagram" />
-      <item index="4" class="java.lang.String" itemvalue="Application.DuplicateWord" />
+      <item index="0" class="java.lang.String" itemvalue="Application.ProcessStudentInfo" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Numbers" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Anagram" />
+      <item index="3" class="java.lang.String" itemvalue="Application.DuplicateWord" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Fibonacci" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.DuplicateWord" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Anagram" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Numbers" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ProcessStudentInfo" />
-        <item index="4" class="java.lang.String" itemvalue="Application.UnitTestSorting" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Fibonacci" />
+        <item index="1" class="java.lang.String" itemvalue="Application.DuplicateWord" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Anagram" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Numbers" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ProcessStudentInfo" />
       </list>
     </recent_temporary>
   </component>
@@ -754,13 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/math/Fibonacci.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/math/FindMissingNumber.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -940,12 +927,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/problems/DuplicateWord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
+        <state relative-caret-position="594">
           <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#635#652#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Fibonacci.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
