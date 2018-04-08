@@ -34,7 +34,7 @@ public class Sort {
         final long startTime = System.currentTimeMillis();
         int [] list = array;
         //implement here
-        for (int i = 1; i<array.length;i++){
+        for (int i = 0; i<array.length-1;i++){
             for (int j =i;j>0;j++){
                 if(array[i]<array[j-1]){
                     int temp = array[j];
@@ -44,9 +44,6 @@ public class Sort {
                 }
             }
         }
-
-
-
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
         this.executionTime = executionTime;
@@ -67,9 +64,6 @@ public class Sort {
 
             }
         }
-
-
-
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
         this.executionTime = executionTime;
@@ -81,6 +75,7 @@ public class Sort {
         final long startTime = System.currentTimeMillis();
         int [] list = array;
         //implement here
+
 
 
         final long endTime = System.currentTimeMillis();
