@@ -2,7 +2,7 @@ package design;
 
 import java.util.Scanner;
 
-public class EmployeeInfo {
+public class EmployeeInfo implements Employee{
 	
  /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
  * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
@@ -20,7 +20,56 @@ public class EmployeeInfo {
 	/*
 	 * declare few static and final fields and some non-static fields
 	 */
+	private String name;
+	private int employeeAge;
+	private int employeeId;
+	private double salary;
+	private int performance;
 	static String companyName;
+	static String Address;
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getEmployeeAge() {
+		return employeeAge;
+	}
+
+	public void setEmployeeAge(int employeeAge) {
+		this.employeeAge = employeeAge;
+	}
+
+	public int getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
+	}
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+	public int getPerformance() {
+		return performance;
+	}
+
+	public void setPerformance(int performance) {
+		this.performance = performance;
+	}
+
+
+
+
 	
 	/*
 	 * You must implement the logic for below 2 methods and 
@@ -33,10 +82,13 @@ public class EmployeeInfo {
 	 * Must implement below constructor.
 	 */
 	public EmployeeInfo(int employeeId){
+		this.employeeId=employeeId;
 		
 	}
     public EmployeeInfo(String name, int employeeId){
-		
+		this.name = name;
+		this.employeeId = employeeId;
+
 	}
 	
 	/*
@@ -47,8 +99,17 @@ public class EmployeeInfo {
 	 * So you probably need to send 2 arguments.
 	 * 
 	 */
-	public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
-		int total=0;
+	public static double calculateEmployeeBonus(int numberOfYearsWithCompany, double salary,int performance){
+		double total=0;
+		if (performance==10){
+			total = salary +(salary*.10);
+		}else if(performance==8){
+			total = salary +(salary*.08);
+		}else if (performance==5){
+			total = salary +(salary*.05);
+		}else{
+			total = salary;
+		}
 		return total;
 	}
 	
@@ -73,6 +134,32 @@ public class EmployeeInfo {
 
 		return total;
 	}
+
+
+	public int employeeId() {
+		return 0;
+	}
+
+
+	public String employeeName() {
+		return null;
+	}
+
+
+	public void assignDepartment() {
+
+	}
+
+
+	public int calculateSalary() {
+		return 0;
+	}
+
+
+	public void benefitLayout() {
+
+	}
+
 	private static class DateConversion {
 
 		public DateConversion(Months months){}

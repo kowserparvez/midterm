@@ -15,6 +15,15 @@ public class FortuneEmployee {
 	 **/
 	public static void main(String[] args) {
 		
+		EmployeeInfo employeeInfo = new EmployeeInfo(10);
+		employeeInfo.setName("Allen");
+		employeeInfo.setEmployeeAge(45);
+		employeeInfo.setEmployeeId(12);
+		employeeInfo.setPerformance(10);
+		employeeInfo.setSalary(5000.50);
+
+		employeeInfo.calculateSalary();
+
 
 
 	}

@@ -1,5 +1,10 @@
 package datastructure;
 
+import databases.ConnectDB;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
 public class DataReader {
 
 	public static void main(String[] args) {
@@ -18,7 +23,41 @@ public class DataReader {
 		 * Use For Each loop/while loop/Iterator to retrieve data.
 		 */
 
-		String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
+		ConnectDB connectDB = new ConnectDB();
+		FileReader fileReader = null;
+		BufferedReader bufferedReader = null;
+		try {
+			//String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
+			fileReader = new FileReader("C:\\Users\\Kowser\\IdeaProjects\\MidtemMarch2018\\src\\data\\self-driving-car");
+		}catch(Exception ex){
+			ex.printStackTrace();
+		}
+		try {
+			bufferedReader = new BufferedReader(fileReader);
+			String string = "";
+			while ((string = bufferedReader.readLine())!=null){
+				System.out.println(string);
+				//connectDB.insertDataFromArrayToMySql("Datareader","Detailed");
+			}
+		}catch (Exception ex){
+			ex.printStackTrace();
+		}finally{//clean up process
+			if(fileReader!=null){
+				try{
+					fileReader.close();
+					fileReader=null;
+				}catch (Exception ex){
+					ex.printStackTrace();
+				}
+			}if(bufferedReader!=null){
+				try{
+					bufferedReader.close();
+					bufferedReader=null;
+				}catch (Exception ex){
+					ex.printStackTrace();
+				}
+			}
+		}
 
 
 
