@@ -1,7 +1,6 @@
 package datastructure;
 
-import org.omg.PortableInterceptor.INACTIVE;
-
+import databases.ConnectDB;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -23,6 +22,11 @@ public class UseArrayList {
 			System.out.println(list);
 		}
 
+		int numofSports = myList.size();
+
+
+		ConnectDB connectDB = new ConnectDB();
+		//connectDB.insertDataFromStringToMySql(myList,"List","Name");
 		Iterator<String> teams = myList.iterator();
 		while (teams.hasNext()){
 			System.out.println(teams.hasNext());
