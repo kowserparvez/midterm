@@ -1,33 +1,74 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
-A.
+A.Data structure is a specialized format for organizing and storing data.
 What are the various operations that can be performed on different Data Structures?
+Traversing Searching Inserting Deleting Sorting Merging
 List out the areas in which data structures are applied extensively?
+mpiler Design, Operating System, Database Management System, Statistical analysis package, Numerical Analysis, Graphics,
+  Artificial Intelligence, Simulation.
 what is an Array?
+Array is a collection of data/values where each value has an index or location associated with it
 what is the difference between the Array and ArrayList?
+array is fixed and array list is dynamic
 what is LinkedList?
+A linked list is a linear data structure where each element is a separate object
 How is an Array different from Linked List?
+array elements are independent , Linked list location or address of elements is stored in the link part of previous element/node
 what is queue?
+The java.util.Queue interface is a subtype of the java.util.Collection interface. It represents an ordered list of objects just like a List , but its intended use is slightly different. A queue is designed to have elements inserted at the end of the queue, and elements removed from the beginning of the queue.it is FIFO and LILO.
 what is stack?
+A stack is a data structure that allows data to be inserted (a 'push' operation), and removed (a 'pop' operation). Many stacks also support a read ahead (a 'peek' operation), which reads data without removing it. A stack is a LIFO-queue, meaning that the last data to be inserted will be the first data to be removed.
 what is FIFO and LIFO?
+first in first out, last in first out
 what is the order of complexity?
+If we think input size is N, we can say that the algorithm will order of complexity at O(1), O(N), O(N^2), O(N^3), O(N*log(N)) and so on.
 what is the best case to search an element from an array?
+sorted array
 what is the worst case to search an element from an array?
+The worst case arises when the element is at last position or not in the array, therefore we have to traverse the whole array giving n no. of repetitions over loop.
+Therefore the worst case time complexity is O(n).
 what is tree in data structure?
+A Tree is a non-linear data structure where data objects are organized in terms of hierarchical relationship. The structure is non-linear in the sense that, unlike simple array and linked list implementation, data in a tree is not organized linearly. Each data element is stored in a structure called a node. The topmost or starting node of the (inverted) tree is called the root node. All nodes are linked with an edge and form hierarchical sub trees beginning with the root node. Tree data structure is useful on occasions where linear representation of data do not suffice, such as creating a family tree. Java provides two in-built classes, TreeSet and TreeMap, in Java Collection Framework that cater to the needs of the programmer to describe data elements in the aforesaid form.
 what is graph in data structure?
+is an object consisting a vertex set and an edge set.
 what is the difference between the HashTable and HashMap?
+Like Hashtable it also accepts key value pair.
+It allows null for both key and value.
+HashMap does not maintain insertion order. The order is defined by the Hash function.
+It is not synchronized. It will have better performance.
+HashMap are not thread safe, but you can use Collections.synchronizedMap(new HashMap<K,V>())
+Hashtable is basically a data structure to retain values of key-value pair.
+Hashtable:
+It does not allow null for both key and value. It will throw NullPointerException.
+Hashtable does not maintain insertion order. The order is defined by the Hash function. So only use this if you do not need data in order.
+It is synchronized. It is slow. Only one thread can access in one time.
+HashTable rea thread safe.
+HashTable uses Enumerator to iterate through elements.
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+array , graph and trees
 How HashMap works in java?
+HashMap: Like Hashtable it also accepts key value pair.
+It allows null for both key and value.
+HashMap does not maintain insertion order. The order is defined by the Hash function.
+It is not synchronized. It will have better performance.
+HashMap are not thread safe, but you can use Collections.synchronizedMap(new HashMap<K,V>())
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+invalid index for a given array
 What are the different ways of copying an array into another array?
-What is difference between an array and a linked list?
+Arrays.copyOf() method. System.arraycopy(),  another method that directly copies one array to another by  Object.clone()
 What is DFS and BFS?
+Depth First Search
+Breadth First Search
 What is Recursion?
+recursion is use to invoke a function call on itself
 What are linear and non linear data Structures?
+lin : Arrays, Stack, Queue and Linked List
+non lin : trees graph
 What is Big-(O)-notation?
+performance or complexity of an algorithm
 Outlined different kind of sorting algorithm with time complexity?
-
+internal and external sorting
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.
   b)In terms of Inserting element.

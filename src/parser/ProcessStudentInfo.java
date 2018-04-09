@@ -52,37 +52,34 @@ public class ProcessStudentInfo {
 				
 				//Create XMLReader object.
 				XmlReader xmlReader = new XmlReader();
-				
-				
 				//Parse Data using parseData method and then store data into Selenium ArrayList.
 				seleniumStudents = xmlReader.parseData(tag, pathSelenium);
-
 				//Parse Data using parseData method and then store data into Qtp ArrayList.
-				
+				qtpStudents = xmlReader.parseData(tag,pathQtp);
 				//add Selenium ArrayList data into map.
-			
+				list.put("Selenium Student",seleniumStudents);
 				//add Qtp ArrayList data into map.
-		
-		      	
+				list.put("QTP Student",qtpStudents);
 				//Retrieve map data and display output.
-
-
-
+				for (Map.Entry<String,List<Student>> data : list.entrySet()){
+					System.out.println(data);
+				}
 				//Store Qtp data into Qtp table in Database
-				connectDB.insertToMongoDB(seleniumStudents,"qtp");
-				//connectDB.insertDataFromArrayListToMySql(seleniumStudents, "qtp","studentList");
-
+				connectDB.insertDataFromArrayListToMySql(qtpStudents, "qtp","studentList");
 				//Store Selenium data into Selenium table in Database
-
+				connectDB.insertDataFromArrayListToMySql(seleniumStudents, "selenium","studentList");
 				//Retrieve Qtp students from Database
-               List<Student> stList = connectDB.readStudentListFromMongoDB("qtp");
-               for(Student st:stList){
-               	  System.out.println(st.getFirstName()+" "+st.getLastName()+" "+st.getScore()+" "+st.getId());
-			   }
-
-			   //Retrieve Selenium students from Database
-
+				try{
+					connectDB.readDataBase("qtp","studentList");
+				}catch (Exception ex){
+					ex.printStackTrace();
+				}
+				//Retrieve Selenium students from Database
+				try{
+					connectDB.readDataBase("selenium","studentList");
+				}catch (Exception ex){
+					ex.printStackTrace();
+				}
 
 			}
-
 }
