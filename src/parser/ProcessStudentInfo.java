@@ -34,7 +34,7 @@ public class ProcessStudentInfo {
 		 *
 		 */
 
-			public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
+			public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException , Exception {
 				//Path of XML data to be read.
 				String pathSelenium  = System.getProperty("user.dir") +"/src/parser/selenium.xml";
 				String pathQtp = System.getProperty("user.dir") + "/src/parser/qtp.xml";
@@ -66,8 +66,10 @@ public class ProcessStudentInfo {
 				}
 				//Store Qtp data into Qtp table in Database
 				connectDB.insertDataFromArrayListToMySql(qtpStudents, "qtp","studentList");
+				List<String> numb1 = connectDB.readDataBase("qtp", "studentList");
 				//Store Selenium data into Selenium table in Database
 				connectDB.insertDataFromArrayListToMySql(seleniumStudents, "selenium","studentList");
+				List<String> numb2 = connectDB.readDataBase("selenium", "studentList");
 				//Retrieve Qtp students from Database
 				try{
 					connectDB.readDataBase("qtp","studentList");
